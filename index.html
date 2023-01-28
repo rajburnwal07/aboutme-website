@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-comptabile" content="IE=edge">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/88c0de9abc.js" crossorigin="anonymous"></script>
+    <title> Raj Burnwal - A DevOps practitioner </title>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p> DevOps Practitioner</p>
+            <h1> Hi, I'm <span>Raj</span> from India.</h1>
+        </div>
+    </div>
+</div>      
+<!-- about me -->
+
+<div id="about-me">
+    <div class="container">
+        <div class="row">
+            <div class="about-col1">
+                <img src="images/me.jpg">
+            </div>
+            <div class="about-col2">
+                <h1 class="sub-title">About Me</h1><br>
+                <p>
+                    Contrary to popular belief, looked up one of the more obscure Latin words, consectetur, The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32. 
+                </p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('Education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="Skills">
+                    <ul>
+                        <li><span>Cloud Providers</span><br><br> AWS, Microsoft Azure</li>
+                        <li><span>Container Orchestration</span><br><br> Kubernetes</li>
+                        <li><span>Container Runtime</span><br><br>Docker, Podman</li>
+                        <li><span>Infrastructure Automation</span><br><br> Terraform</li>
+                        <li><span>Configuration Management</span><br><br> Ansible</li>
+                        <li><span>CI/CD Tools</span><br><br> Jenkins, Github Actions</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Experience">
+                    <ul>
+                        <li><span>2022-Current</span><br><br> Senior DevOps Engineer @ Opcito Technologies, Pune</li>
+                        <li><span>2020-2022</span><br><br> Member of Technical Staff, DevOps @ LambdaTest Pvt LTD. </li>
+                        <li><span>2018-2020</span><br><br>Associate DevOps Engineer @ Ingram Micro</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Education">
+                    <ul>
+                        <li><span>2018</span><br><br> B.tech in Computer Science from GCELT, Kolkata</li>
+                        <li><span>2015</span><br><br> Diploma in Computer science from Kanyapur Polytechnic,Asansol </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Services tab -->
+<div id="service">
+    <div class="container">
+        <h1 class="sub-title" style="text-align: center;">My Services</h1>
+        <div class="service-list">
+            <div>
+                <i class="fa-brands fa-aws"></i>
+                <h2>Zero Downtime Deploy</h2><br>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-jenkins"></i>
+                <h2> CI/CD Pipleline</h2><br>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-toolbox"></i>
+                <h2> Kubernetes & Docker</h2><br>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-cloud"></i>
+                <h2> Cloud Services</h2><br>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Portfolio tab -->
+<div id="Portfolio">
+    <div class="container">
+        <h1 class="sub-title" style="text-align: center;">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3> End to End CI/CD Pipeline</h3>
+                    <p>This complete CI/CD pipeline is created using Jenkins, Github and Kubernetes Deployment.</p>
+                    <a href="#"><i class="fa-solid fa-paperclip"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png">
+                <div class="layer">
+                    <h3> Cloud Services</h3>
+                    <p>This complete CI/CD pipeline is created using Jenkins, Github and Kubernetes Deployment.</p>
+                    <a href="#"><i class="fa-solid fa-paperclip"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.jpg">
+                <div class="layer">
+                    <h3> Docker & Kubernetes pipeline</h3>
+                    <p>This complete CI/CD pipeline is created using Jenkins, Github and Kubernetes Deployment.</p>
+                    <a href="#"><i class="fa-solid fa-paperclip"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-4.jpg">               
+                <div class="layer">
+                    <h3> Cloud Migration</h3>
+                    <p>This complete CI/CD pipeline is created using Jenkins, Github and Kubernetes Deployment.</p>
+                    <a href="#"><i class="fa-solid fa-paperclip"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+
+<!-- Contact -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title" style="text-align: center"> Contact Me </h1>
+                <p><i class="fa-solid fa-at"></i>  rjburnwal@gmail.com</p>
+                <p><i class="fa-solid fa-mobile-retro"></i>   &nbsp;&nbsp;+91 9563835602</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/rajburnwal"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://facebook.com/rajkumar.burnwal.9"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/quirky.raj"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://github.com/rajburnwal07"><i class="fa-brands fa-github"></i></a>
+                    <p></p>
+                </div>
+                <a href="images/Raj-Burnwal.pdf" class="btn btn2">Download CV</a>                
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea  name="Message" rows="6" placeholder="Your message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p> Copyright ⓒ Raj. Made with the help of Internet <i class="fa-solid fa-heart"></i> </p>
+    </div>
+</div>
+<script>
+    var tablinks=document.getElementsByClassName("tab-links")
+    var tabcontents=document.getElementsByClassName("tab-contents")  
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link")
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab")
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab")
+    }  
+</script>
+<script>
+    var sidemenu=document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right= "0";
+    }
+
+    function closemenu(){
+        sidemenu.style.right= "-200px";
+    }
+</script> 
+</body>    
+</html>
