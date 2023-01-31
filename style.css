@@ -361,12 +361,13 @@ form .btn2{
     font-size: 18px;
     margin-top: 20px;
     cursor: pointer;
+    margin-right: 15px
 }
 
 .copyright{
     width: 100%;
     text-align: center;
-    padding: 25px 0;
+    padding: 16px 0;
     background: #262626;
     font-weight: 300;
     margin-top: 25px;

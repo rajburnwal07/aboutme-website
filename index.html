@@ -14,11 +14,11 @@
         <nav>
             <img src="images/logo.png" class="logo">
             <ul id="sidemenu">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about-me">About</a></li>
+                <li><a href="#service">Services</a></li>
+                <li><a href="#Portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
                 <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
             </ul>
             <i class="fa-solid fa-bars" onclick="openmenu()"></i>
@@ -168,11 +168,12 @@
                 <a href="images/Raj-Burnwal.pdf" class="btn btn2">Download CV</a>                
             </div>
             <div class="contact-right">
-                <form>
+                <form onsubmit="sendmsg(); reset(); return false;">
                     <input type="text" name="Name" placeholder="Your Name" required>
-                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <input type="email" name="Email" id="email" placeholder="Your Email" required>
                     <textarea  name="Message" rows="6" placeholder="Your message"></textarea>
                     <button type="submit" class="btn btn2">Submit</button>
+		    <input type="reset" class="btn btn2" id="clear">
                 </form>
             </div>
         </div>
@@ -205,5 +206,21 @@
         sidemenu.style.right= "-200px";
     }
 </script> 
+<script> src="https://smtpjs.com/v3/smtp.js"</script>
+<script>
+	function sendmsg(){
+		Email.send({
+                Host : "smtp.elasticemail.com",
+                Username : "rajkumarburnwal758@gmail.com",
+    		Password : "CE54AB7CD484A3A65167B6796EFFF403C5A8",
+    		To : 'rjburnwal@gmail.com',
+    		From : document.getElementById("email").value,
+    		Subject : "New Contact form Enquiry",
+    		Body : "Body here you go."
+		}).then(
+  		message => alert(message)
+                );
+	}
+</script>
 </body>    
 </html>
